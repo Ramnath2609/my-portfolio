@@ -143,6 +143,12 @@ main {
             @include easeOut;
         }
     }
+
+    .item {
+        i {
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 // Contact page
