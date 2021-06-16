@@ -260,7 +260,7 @@ main {
   main {
     align-items: center;
     text-align: center; }
-    main .lg-head {
+    main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,
@@ -279,7 +279,6 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -289,7 +288,14 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 4rem 2rem; }
+    main .lg-heading {
+      font-size: 3rem; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .boxes div {
+    padding: 1rem 1rem;
+    font-size: 1.5rem; } }
