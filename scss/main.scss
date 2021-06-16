@@ -13,6 +13,12 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 //Headings
@@ -83,15 +89,18 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio bio' 
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+    'bioimage bio' 
+    'job1 job2';
+    grid-template-columns: repeat(2, 1fr);
 
     .bio-img {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
         border: $secondary-color 3px solid;
+        width: 250px;
+        height: 250px;
+        background-size: cover;
     }
     
     .bio {
@@ -137,6 +146,10 @@ main {
 }
 
 // Contact page
+
+#contact {
+    overflow: hidden;
+}
 
 .boxes {
     display: flex;
